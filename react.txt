@@ -1,0 +1,98 @@
+front-end technology
+        ----------------------
+basic feature & concept
+----------------------
+
+basic commands 
+---------------
+       1.to create react project :- npx create-react-app project-name
+       2. to run react project :- npm start
+
+* is an collection of js libraries : used to design UI
+* creating single page application : gmail,facebook,twitter
+* Declarative approach :
+* immutable (non changable)
+* pure functions : it will accept immutable objects and returns a new object. it didn't cause any side effect : Ex- react components
+* virtual Dom
+// rfce - react functional component export //
+// rcc - react class component
+* react using JSX(javascript xml)
+* JSX to convert (html,css,js) using babel library
+          - jsx is a compination of javascript and xml
+          - react fragments : <> </> similar to <div> </div>
+          - To style use Inline Styling in component - where css property should be in camel case in an object- changes in attribute :- always use camel letters
+                - class become className
+                -every jsx elememts have a self closing tag
+* command for creating react app : create-react-app
+* components :- small part of UI,React app is a collection components,they are arranged as a tree structure with parent/start node as 'app' component
+          -component is a js file, with filename will start with capital letter, it always return HTML
+          - different way to create component
+                 >functional component
+                 >class based component/ stateful component
+           -High order component
+           - Data sharing in react component :
+                 >  One way binding (parent to child)
+           - Style react component
+                 >  inline Styling
+                 > external style sheet 
+                 > css module:file extension  as module.css
+           -React Events
+                 >without argument function: events bind using its function name only
+                  >with  event argument function:event binding using arrow function({()=>add("max")})
+                  >with argument as event
+            -conditional Rendering:
+                 >if statements  :&&operator
+                 >if else statements :?:ternery operator
+            -React State:Built in object
+                 >store property or component
+                 >state changes then it re-render the component:use setState function
+            -React component life cycle:
+                 >mounting phase:putting all  elememts into Dom
+                    -constructure()
+                    -getDerivedStateFromProps()
+                    -componentDidMount()
+                 >updating phase :component updating
+                    -getDerivedStateFromProps()
+                    -shouldComponentupdate()
+                    -render()
+                    -getsnapshotBeforeUpdate()
+                    -componentDidUpdate()
+                 >unmounting phase:removing elememt from Dom
+                    -componentWillUnmount()
+                    
+            -React Hooks:for making functional component to use react features
+                  >Import hook:and to use call the hook inside component
+                   -Rools of hooks:
+                      >can used only in functional component
+                      > it can only  called at the top  level of component
+                      >Hooks are not conditional
+                  -different type hook:
+                      >predefined Hooks
+                         -useState(initial-hook):return state and function for updating state
+                      > Coustom hook:
+
+            -diffreent between functional and class component
+                -functional component
+                -------------------------------
+                    > js pure function accept props and argument and return jsx(react elememts)
+                    > no need of render function
+                    > Run code from to bottom,once jsx return it cannot be alive
+                    > stateless component
+                    > hooks are used
+                    > constructor is not used
+                    > life cycle method like componentDidMount
+                     is not use
+
+                 -class base component
+            -------------------------------
+                   > A class extended from react component and render a function and return jsx
+                   >  need of render function
+                   >  component alive depending on the life cycle phases
+                   > stateful component
+                   > no need to hooks
+                   > use constructor
+                   > can b e use life cycle methods inside component
+
+            -Rendering list: use map method
+            -React Form:
+                  >form are handled by component
